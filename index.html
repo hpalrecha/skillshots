@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-M-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillShots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'var(--color-primary)',
+              secondary: 'var(--color-secondary)',
+              accent: 'var(--color-accent)',
+              neutral: 'var(--color-neutral)',
+              'base-100': 'var(--color-base-100)',
+              info: 'var(--color-info)',
+              success: 'var(--color-success)',
+              warning: 'var(--color-warning)',
+              error: 'var(--color-error)',
+            },
+          },
+        },
+      };
+    </script>
+     <style type="text/tailwindcss">
+      @layer base {
+        :root {
+            --color-primary: #0ea5e9; /* Sky 500 - Updated for new brand */
+            --color-secondary: #f59e0b; /* Amber 500 */
+            --color-accent: #6366f1; /* Indigo 500 */
+            --color-neutral: #4b5563; /* Gray 600 */
+            --color-base-100: #f9fafb; /* Gray 50 */
+            --color-info: #3b82f6; /* Blue 500 */
+            --color-success: #10b981; /* Emerald 500 */
+            --color-warning: #f59e0b; /* Amber 500 */
+            --color-error: #ef4444; /* Red 500 */
+        }
+        body {
+            @apply bg-base-100 text-neutral antialiased;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "dotenv": "https://aistudiocdn.com/dotenv@^17.2.3",
+    "@prisma/client": "https://aistudiocdn.com/@prisma/client@^6.19.0",
+    "bcryptjs": "https://aistudiocdn.com/bcryptjs@^3.0.3",
+    "process": "https://aistudiocdn.com/process@^0.11.10",
+    "express-validator": "https://aistudiocdn.com/express-validator@^7.3.0",
+    "jsonwebtoken": "https://aistudiocdn.com/jsonwebtoken@^9.0.2",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "SkillShots",
+  "description": "A daily micro-learning application for teams. It delivers concise training 'shots', tracks progress, and uses AI to generate quizzes and recommend further learning, fostering engagement and accountability.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
